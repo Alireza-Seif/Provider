@@ -5,7 +5,6 @@ import 'package:provider/provider.dart';
 import 'package:provider_course/constants/my_theme.dart';
 import 'package:provider_course/providers/theme_provider.dart';
 import 'package:provider_course/screens/main_wrapper.dart';
-import 'package:provider_course/widgets/theme_switcher.dart';
 
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
