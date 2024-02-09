@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_course/constants/my_theme.dart';
+import 'package:provider_course/providers/crypto_data_provider.dart';
 import 'package:provider_course/providers/theme_provider.dart';
 import 'package:provider_course/screens/main_wrapper.dart';
 
@@ -15,9 +16,8 @@ void main() {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(
-          create: (context) => ThemeProvider(),
-        )
+        ChangeNotifierProvider(create: (context) => ThemeProvider()),
+        ChangeNotifierProvider(create: (context) => CryptoDataProvider()),
       ],
       child: const MyMatrialApp(),
     ),
